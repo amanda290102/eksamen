@@ -18,3 +18,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+//FONTE//
+
+body-text {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, header {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+
+.logo,
+.citat {
+  font-family: 'Instrument Serif', serif;
+}
