@@ -57,7 +57,6 @@ h1, h2, h3, h4, h5 {
   color: $font-color;
 }
 
-
 body {
   background-color: $bg-color !important;
   font-family: 'Inter', sans-serif;
@@ -1162,7 +1161,6 @@ body {
 
 
 //SCROLLBAR//
-
 .forside-scrollbar-content h4 {
   color: $white-color !important;
 }
@@ -1211,7 +1209,6 @@ body {
   padding: 20px;
   text-align: center;
   background: $green-color;
-  text-align: center;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -1391,391 +1388,108 @@ body {
   right: -35px;
 }
 
-/* =========================================
-FOOTER
-========================================= */
-
 .forside-footer {
-
   width: 100%;
-
   background: $green-color;
-
   padding: 20px 48px 12px 48px;
-
   margin-top: 80px;
-
 }
-
-/* =========================================
-CONTAINER
-========================================= */
 
 .forside-footer-container {
-
   max-width: 1400px;
-
   margin: 0 auto;
-
   display: grid;
-
   grid-template-columns: 1fr auto 1fr;
-
   align-items: center;
-
 }
 
-/* =========================================
-LEFT
-========================================= */
-
 .forside-footer-left {
-
   display: flex;
-
   flex-direction: column;
-
   gap: 16px;
-
 }
 
 .forside-footer-left p {
-
   margin: 0;
-
   color: $white-color;
-
   font-size: 20px;
-
   line-height: 1.5;
-
   font-family: 'Fraunces', serif;
-
 }
 
-/* =========================================
-CENTER
-========================================= */
-
 .forside-footer-center {
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   gap: 6px;
-
 }
 
 .forside-footer-bomaerke {
-
   width: 85px;
-
   display: block;
-
 }
 
 .forside-footer-logo {
-
   width: 210px;
-
   display: block;
-
 }
 
-/* =========================================
-SOME
-========================================= */
-
 .forside-footer-some {
-
   display: flex;
-
   align-items: center;
-
   gap: 10px;
-
   margin-top: 2px;
-
 }
 
 .forside-footer-some a {
-
   display: flex;
-
 }
 
 .forside-footer-some img {
-
   width: 36px;
-
   height: 36px;
-
   display: block;
-
 }
 
-/* =========================================
-RIGHT
-========================================= */
-
 .forside-footer-right {
-
   display: flex;
-
   justify-content: flex-end;
-
 }
 
 .forside-footer-right ul {
-
   margin: 0;
-
   padding-left: 20px;
-
 }
 
 .forside-footer-right li {
-
   margin-bottom: 6px;
-
 }
 
 .forside-footer-right a {
-
   color: $white-color;
-
   text-decoration: none;
-
   font-size: 20px;
-
   line-height: 1.4;
-
   font-family: 'Fraunces', serif;
-
   transition: 0.3s ease;
-
 }
 
 .forside-footer-right a:hover {
-
   opacity: 0.7;
-
 }
-
-/* =========================================
-BOTTOM
-========================================= */
 
 .forside-footer-bottom {
 
   max-width: 780px;
-
   margin: 16px auto 0 auto;
-
   padding-top: 12px;
-
   border-top: 1px solid rgba(255,255,255,0.4);
-
   text-align: center;
-
 }
 
 .forside-footer-bottom p {
-
   margin: 0;
-
   color: #E6B34D;
-
   font-size: 20px;
-
   font-family: 'Fraunces', serif;
-
-}
-
-/* =========================================
-livet op sejerø
-========================================= */
-
-.livet-preview {
-  width: 100%;
-  padding: 80px 20px;
-  margin-top: 40px;
-}
-
-.livet-container {
-  width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
-}
-
-.livet-preview-header {
-  max-width: 1400px;
-  margin: 0 auto 40px auto;
-  background: rgba(176, 137, 104, 0.5);
-  border-radius: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.livet-preview .row,
-.livet-season,
-.livet-barn {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.livet-card {
-  background: rgba(255,255,255,0.6);
-  border-radius: 18px;
-  overflow: hidden;
-  height: 100%;
-}
-
-.livet-card-label {
-  background: #6b7f5f;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  font-family: 'Fraunces', serif;
-}
-
-.livet-card img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-.livet-card-content {
-  padding: 24px;
-}
-
-.livet-card-content h4 {
-  font-family: 'Fraunces', serif;
-  margin-bottom: 15px;
-}
-
-.livet-card-content p {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-}
-
-/* =========================
-   SÆSON BLOKKE
-========================= */
-
-.livet-season {
-  border-radius: 22px;
-  overflow: hidden;
-  margin-bottom: 90px;
-  margin-top: 90px;
-  padding: 14px;
-}
-
-.livet-season.green {
-  background: #6b7f5f;
-}
-
-.livet-season.blue {
-  background: #b6c7cf;
-}
-
-.livet-season img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-.livet-season-text {
-  background: #f8f5ef;
-  padding: 40px;
-  height: 100%;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.livet-season-text h3 {
-  font-family: 'Fraunces', serif;
-  margin-bottom: 15px;
-}
-
-.livet-season-text p {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-}
-
-/* =========================
-   BØRNE SEKTION
-========================= */
-
-.livet-barn {
-  background: rgba(255,255,255,0.6);
-  border-radius: 22px;
-  overflow: hidden;
-}
-
-.livet-barn img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.livet-barn-text {
-  padding: 50px;
-}
-
-.livet-barn-text h3 {
-  font-family: 'Fraunces', serif;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
-
-.livet-barn-text ul {
-  padding-left: 20px;
-}
-
-.livet-barn-text li {
-  margin-bottom: 12px;
-  font-family: 'Inter', sans-serif;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 991px) {
-
-  .livet-season-text,
-  .livet-barn-text {
-    padding: 30px;
-  }
-
-  .livet-card img,
-  .livet-season img {
-    height: 220px;
-  }
-
-}
-
-/* =========================================
-livet op sejerø slut
-========================================= */
-
-/* =========================================
-GLOBAL CONTAINER
-========================================= */
-
-.page-container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
 }
