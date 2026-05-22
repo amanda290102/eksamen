@@ -660,6 +660,13 @@ BOTTOM
 Hverdag på sejerø
 ========================================= */
 
+.hverdag-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+
 
 .hverdagpåserjerøhero {
   position: relative;
@@ -1486,3 +1493,183 @@ body {
   font-size: 20px;
   font-family: 'Fraunces', serif;
 }
+
+/* =========================================
+livet op sejerø ========================================= */
+
+.livet-preview {
+  width: 100%;
+  padding: 80px 20px;
+  margin-top: 40px; }
+
+.livet-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.livet-preview-header {
+  max-width: 1400px;
+  margin: 0 auto 40px auto;
+  background: rgba(176, 137, 104, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.livet-preview .row,.livet-season, .livet-barn {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.livet-card {
+  background: rgba(255,255,255,0.6);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.livet-card-label {
+  background: #6b7f5f;
+  background: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 12px;
+  font-family: 'Fraunces', serif;
+}
+
+.livet-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.livet-card-content {
+  padding: 24px;
+}
+
+.livet-card-content h4 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 15px;
+}
+
+.livet-card-content p {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+}
+
+/* ===================
+====== SÆSON BLOKKE ========================= */
+
+.livet-season {
+  border-radius: 22px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding: 14px;
+  background: rgba(255,255,255,0.6);
+  margin-top: 80px;
+}
+
+.livet-season.green {
+  background: #6b7f5f;
+}
+
+.livet-season.blue {
+  background: #b6c7cf;
+}
+
+.livet-season img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.livet-season-text {
+  background: #f8f5ef;
+  padding: 40px;
+  height: 100%;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.livet-season-text h3 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 15px;
+}
+
+.livet-season-text p {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+
+}
+
+/* ==================
+======= BØRNE SEKTION ========================= */
+
+.livet-barn {
+  background: rgba(255,255,255,0.6);
+  border-radius: 22px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.livet-barn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.livet-barn-text {
+  padding: 50px;
+}
+
+.livet-barn-text h3 {
+  font-family: 'Fraunces', serif;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.livet-barn-text ul {
+  padding-left: 20px;
+}
+
+.livet-barn-text li {
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+}
+/* ========================= RESPONSIVE =======
+================== */
+
+@media (max-width: 991px) {
+
+  .livet-season-text, .livet-barn-text {
+    padding: 30px;
+  }
+
+  .livet-card img, .livet-season img {
+    height: 220px;
+  } }
+
+.btnmød {
+  width: fit-content;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  background: $blue-color;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.knap-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* ========================================= livet op sejerø slut ==================
+======================= */
