@@ -41,8 +41,9 @@ $white-color: #FFFFFF;
 
 //FONTE//
 
-body {
+body, p, span {
   font-family: 'Inter', sans-serif;
+  color: $font-color;
 }
 
 h1, h2, h3, h4, h5 {
@@ -658,4 +659,127 @@ h5 {
   margin: 0;
   font-size: 18px;
   color: $white-color !important;
+}
+
+/*VEJR INFO*/
+.vejr-info {
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+/* TOP */
+.vejr-info-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: $blue-color;
+  border-radius: 24px;
+  padding: 20px;
+  overflow: hidden;
+  align-items: stretch;
+height: 620px;
+}
+
+.vejr-info-image img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 18px 0 0 18px;
+  display: block;
+}
+
+.vejr-info-content {
+  background: $white-color;
+  padding: 60px;
+  text-align: center;
+  border-radius: 0 18px 18px 0;
+  height: 65%;
+}
+
+.vejr-info-content h3 {
+  margin-bottom: 32px;
+}
+
+.vejr-info-content p {
+  font-size: 26px;
+  line-height: 1.8;
+}
+
+.vejr-info-content img {
+  width: 60px;
+  margin: 40px auto 24px;
+  display: block;
+}
+
+.vejr-info-content blockquote {
+  font-size: 22px;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+.vejr-info-content span {
+  font-family: 'Instrument Serif', serif;
+  font-size: 24px;
+}
+
+/* BOTTOM */
+.vejr-info-bottom {
+  margin-top: 80px;
+  background: #DCC6AF;
+  border-radius: 24px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* AKTIVITETER */
+.vejr-info-activity img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.vejr-info-activity p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* EVENTS */
+.vejr-events h3 {
+  margin-bottom: 32px;
+}
+
+.vejr-event {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.vejr-event img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.vejr-event h4 {
+  margin-bottom: 10px;
+}
+
+.vejr-event p {
+  margin-bottom: 8px;
+}
+
+.vejr-events a {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: $blue-color;
+  text-decoration: none;
+  color: $font-color;
+  font-family: 'Fraunces', serif;
 }
