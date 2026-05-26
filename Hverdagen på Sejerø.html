@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
     <!-- Fraunces SemiBold -->
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
@@ -26,7 +29,603 @@
 
 <body>
 
+<!--navbar -->
+<nav class="navbar navbar-expand-lg py-2 forside-navbar bg-transparent">
+    <div class="container-fluid">
 
+        <div class="forside-navbar-left">
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Årstiderne</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Livet på øen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="forside-navbar-right">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hverdagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Om øen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="forside-floating-logo">
+    <img src="image/sejerø%20logo-kopi%201.svg" alt="Sejerø">
+</div>
+<!--navbar slut-->
+
+<section class="hverdagpåserjerøhero">
+    <video autoplay muted loop playsinline class="hverdagpåserjerøhero-video">
+        <source src="video/herotaarn.mp4" type="video/mp4">
+    </video>
+
+
+
+    <div class="hverdagpåserjerøhero-content">
+        <h1>Hverdagen fungerer også her</h1>
+        <p>Hvordan fungerer skole, indkøb, færge og familieliv på øen? Her får du overblikket</p>
+    </div>
+</section>
+
+<!--intro tekst-->
+
+
+<section class="hverdag1-intro">
+    <div class="hverdag1-intro-card">
+        <h3>
+            Hverdagen på Sejerø
+        </h3>
+        <p>
+            På Sejerø handler livet om trygge rammer og stærke fællesskaber. Her er afstandene korte, tempoet lavere og nærværet større.
+            Samtidig fungerer hverdagen stadig med skole, indkøb, arbejde, internet og fritidsaktiviteter, bare i et mere overskueligt tempo.
+        </p>
+    </div>
+</section>
+
+<!--intro tekst slut-->
+
+<div class="hverdag-container">
+
+
+<!-- HVERDAG CARDS -->
+<section class="hverdagcards-section">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">SKOLE</h5>
+
+                        <h4>Det lille skoleliv</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            På Sejerø mødes børnene i små klasser med tæt kontakt mellem elever og lærere.
+                            Det skaber trygge rammer, stærke relationer og en hverdag, hvor alle bliver set og hørt.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <!-- Sæt billede ind her -->
+                        <img src="image/skole%20skulptur.png" alt="Skole">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">INSTITUTIONER</h5>
+
+                        <h4>Trygge omgivelser</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            Øens mindre fællesskaber giver børn mulighed for at vokse op i rolige og nære omgivelser,
+                            hvor hverdagen er præget af genkendelighed, nærvær og fællesskab.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <img src="image/to%20cykler.png" alt="Institutioner">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">INDKØB</h5>
+
+                        <h4>Det vigtigste tæt på</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            Sejerø tilbyder daglige indkøbsmuligheder og lokale tilbud,
+                            som gør det nemt at få hverdagen til at fungere uden lange køreture.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <img src="image/sejerø%20hus.png" alt="Indkøb">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">ARBEJDE</h5>
+
+                        <h4>Mulighed for fleksibilitet</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            Med stabil internetforbindelse og mulighed for hjemmearbejde
+                            kan mange kombinere arbejdsliv med et roligere familieliv tættere på naturen.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <img src="image/mand%20fisker.png" alt="Arbejde">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">FÆRGEN</h5>
+
+                        <h4>Forbundet til fastlandet</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            Færgen er en naturlig del af livet på Sejerø og skaber forbindelse
+                            til fastlandet i hverdagen, samtidig med at tempoet bliver lidt roligere.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <img src="image/færgen.png" alt="Færgen">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-md-6">
+                <div class="hverdagcard">
+
+                    <div class="hverdagcard-top">
+                        <h5 class="hverdagcard-label">FRITID</h5>
+
+                        <h4>Naturen som legeplads</h4>
+                        <div class="hverdag-tekst-card">
+
+                        <p>
+                            Havet, naturen og de lokale aktiviteter skaber gode muligheder
+                            for fællesskab, fritidsliv og oplevelser året rundt.
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="hverdagcard-image">
+                        <img src="image/ko.png" alt="Fritid">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--citat tekst-->
+
+<section class="hverdag-intro">
+    <div class="hverdag-intro-card">
+
+        <h3 class="text-white">
+            “Sejerø er ikke kun en sommerø.
+            Om vinteren sænker tempoet sig, og fællesskabet kommer tættere på gennem lokale aktiviteter,
+            nærvær og hverdagsliv året rundt” <br> <br> – Dorthe Jensen, øboer
+        </h3>
+    </div>
+</section>
+
+<!--citat slut-->
+
+<section class="hverdag-preview">
+    <div class="hverdag-preview-header">
+        <h2>FAQ</h2>
+    </div>
+
+    <!-- FAQ -->
+    <section class="hverdagfaq-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- VENSTRE SIDE -->
+                <div class="col-md-6">
+
+                    <div class="accordion hverdagfaq-accordion" id="hverdagFaqLeft">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+
+                                    Hvordan fungerer skolen på Sejerø?
+                                </button>
+                            </h2>
+
+                            <div id="faq1"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqLeft">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Sejerø har sin egen skole og børnehus med undervisning fra 0.–7. klasse. Skolen lægger vægt på små trygge rammer, nærvær og undervisning på tværs af alderstrin.
+                                    Efter 7. klasse får eleverne gratis og frit efterskolevalg. Der er også SFO tilknyttet skolen.
+                                    Du kan læse mere om skolen her: <a href="https://sejero.dk/om-sejeroe/offentlige-services/skole/">
+                                    Sejerø Skole
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+
+                                    Kan man arbejde hjemmefra?
+                                </button>
+                            </h2>
+
+                            <div id="faq2"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqLeft">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Ja, mange kombinerer livet på Sejerø med online arbejde eller hjemmearbejde.
+                                    Øen har internetforbindelse og rolige omgivelser, som gør det attraktivt for folk med digitale eller kreative jobs.
+                                   <a href="https://www.kalundborg.dk/livet-i-kalundborg/tilflytter/moed-lokalomraaderne/sejeroe" target="_blank" rel="noopener noreferrer">
+                                    Læs mere om at bo og arbejde på Sejerø
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+
+                                    Hvordan fungerer færgen?
+                                </button>
+                            </h2>
+
+                            <div id="faq3"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqLeft">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Sejerøfærgen sejler mellem Havnsø og Sejerø, og overfarten tager cirka 65 minutter.
+                                    Færgen har flere daglige afgange og fungerer som en vigtig del af hverdagen for både fastboende og besøgende.
+                                    Du kan se sejlplaner og billetinformation her:
+                                    <a href="https://www.sejeroefaergen.dk/" target="_blank" rel="noopener noreferrer">
+                                        Sejerøfærgen
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+
+                                    Findes der indkøbsmuligheder?
+                                </button>
+                            </h2>
+
+                            <div id="faq4"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqLeft">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Ja, Sejerø har en lokal Dagli’Brugsen, hvor man kan købe dagligvarer, frisk brød og andre nødvendige hverdagsvarer. Butikken fungerer som et vigtigt samlingspunkt på øen.
+                                    Du kan læse mere om butikken her: <a href="https://dagligvareportalen.dk/dagli-brugsen-sejeroe/" target="_blank" rel="noopener noreferrer">
+                                    Dagli’Brugsen Sejerø
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- HØJRE SIDE -->
+                <div class="col-md-6">
+
+                    <div class="accordion hverdagfaq-accordion" id="hverdagFaqRight">
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+
+                                    Hvordan er fællesskabet?
+                                </button>
+                            </h2>
+
+                            <div id="faq5"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqRight">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Fællesskabet på Sejerø beskrives som tæt og aktivt. Mange arrangementer drives af frivillige og lokale foreninger, og både fastboende og sommerhusejere deltager i aktiviteter året rundt. Øernes Højskole og lokale initiativer er med til at skabe et stærkt lokalt fællesskab.
+                                    Du kan læse mere om fællesskabet og ø-livet her: <a href="https://undervaerker.dk/udforsk/2022/oeernes-hoejskole-paa-sejeroe/" target="_blank" rel="noopener noreferrer">
+                                    Øernes Højskole på Sejerø
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+
+                                    Hvad laver man i fritiden?
+                                </button>
+                            </h2>
+
+                            <div id="faq6"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqRight">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    På Sejerø fylder naturen og fællesskabet meget i fritiden. Mange bruger tiden på cykling, vandreture,
+                                    badning, sejlads og lokale arrangementer. Der findes også foreninger, kulturaktiviteter og fælles arrangementer året rundt.
+                                    Du kan læse mere om aktiviteter og oplevelser her: <a href="https://www.visitdenmark.dk/da/danmark/oplev/sejeroe" target="_blank" rel="noopener noreferrer">
+                                    Visit Sejerø</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq7">
+
+                                    Er der internet på øen?
+                                </button>
+                            </h2>
+
+                            <div id="faq7"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqRight">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Ja, der er internet på Sejerø, hvilket gør det muligt både at streame, arbejde hjemmefra og deltage i online møder. Flere tilflyttere vælger netop øen, fordi man kan kombinere natur og ro med en digital hverdag.
+                                    Du kan læse mere om livet på øen her: <a href="https://www.kalundborg.dk/livet-i-kalundborg/tilflytter/moed-lokalomraaderne/sejeroe" target="_blank" rel="noopener noreferrer">
+                                    Tilflytterguide Sejerø </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="accordion-item hverdagfaq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed hverdagfaq-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#faq8">
+
+                                    Hvordan er livet om vinteren?
+                                </button>
+                            </h2>
+
+                            <div id="faq8"
+                                 class="accordion-collapse collapse"
+                                 data-bs-parent="#hverdagFaqRight">
+
+                                <div class="accordion-body hverdagfaq-body">
+                                    Vinteren på Sejerø er mere stille og rolig end sommeren, men mange beskriver den som hyggelig og nærværende. Naturen fylder mere, tempoet er lavere, og fællesskabet blandt de fastboende bliver endnu tydeligere.
+                                    Du kan læse mere om hverdagen på Sejerø her: <a href="Hverdagen%20på%20Sejerø.html" target="_blank" rel="noopener noreferrer">
+                                    Hverdagslivet på Sejerø</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hverdag-preview pt-2">
+        <div class="hverdag-preview-header">
+            <h2>Kort over øen</h2>
+        </div>
+
+        <div class="kort">
+            <img src="image/kort.png" alt="kortoverSejerø">
+        </div>
+
+        <div class="kontakt-wrapper">
+            <div class="kontakt-container">
+                <h2>Få mere information om at flytte til Sejerø</h2>
+                <p>Udfyld formularen, så kontakter en fagperson dig med mere viden om bolig, arbejde og livet på øen.</p>
+
+                <form class="kontakt-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Navn" required>
+                        <input type="email" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="tel" placeholder="Telefonnummer">
+                        <input type="text" placeholder="Nuværende by">
+                    </div>
+
+                    <textarea placeholder="Skriv lidt om dine tanker eller spørgsmål..." rows="6"></textarea>
+
+                    <button class="btnkontakt" type="submit">Kontakt mig</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="hverdag1-intro">
+            <div class="hverdag1-intro-card">
+                <h4 class="hverdag1tekst">
+                    På Sejerø handler livet om trygge rammer og stærke fællesskaber. Her er afstandene korte, tempoet lavere og nærværet større.
+                    Samtidig fungerer hverdagen stadig med skole, indkøb, arbejde, internet og fritidsaktiviteter, bare i et mere overskueligt tempo.
+                </h4>
+            </div>
+        </section>
+</div>
+
+<div class="hverdagknap-wrapper">
+    <button class="btnmød" type="submit">
+        Oplev livet på Sejerø
+    </button>
+</div>
+
+</div>
+
+
+
+        <footer class="forside-footer">
+
+            <div class="forside-footer-container">
+
+                <!-- VENSTRE -->
+
+                <div class="forside-footer-left">
+
+                    <p>
+                        Kalundborg Kommune<br>
+                        Bosætning og udvikling
+                    </p>
+
+                    <p>
+                        Kalundborg@kalundborg.dk<br>
+                        Holbækvej 141B<br>
+                        4400 Kalundborg
+                    </p>
+                </div>
+
+                <!-- MIDTE -->
+
+                <div class="forside-footer-center">
+
+                    <img class="forside-footer-bomaerke"
+                         src="image/sejer%20bomærke-kopi%201.svg"
+                         alt="Bomærke">
+
+                    <img class="forside-footer-logo"
+                         src="image/logo.svg"
+                         alt="Sejerø">
+
+                    <div class="forside-footer-some">
+
+                        <a href="#">
+                            <img src="image/sejerø%20logo-kopi%201.svg" alt="Facebook">
+                        </a>
+
+                        <a href="#">
+                            <img src="image/some logo.svg" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HØJRE -->
+
+                <div class="forside-footer-right">
+
+                    <ul>
+
+                        <li><a href="#">Forside</a></li>
+                        <li><a href="#">Livet på Sejerø</a></li>
+                        <li><a href="#">Familierne</a></li>
+                        <li><a href="#">Hverdagen på Sejerø</a></li>
+                        <li><a href="#">Året på Sejerø</a></li>
+                        <li><a href="#">Om Sejerø</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BUND -->
+
+            <div class="forside-footer-bottom">
+                <p>© 2026 Sejerø × Kalundborg Kommune</p>
+            </div>
+        </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
