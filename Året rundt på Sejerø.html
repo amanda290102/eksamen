@@ -184,16 +184,90 @@
     </div>
 </section>
 
-    <section class="forside-citat">
-        <div class="forside-citat-box">
-            <h3>
-                Et fællesskab hele året
-            </h3>
+<!--ÅRSHJUL-->
+
+<section class="season-section">
+
+    <div class="season-header">
+
+        <h2>Hvordan ser livet ud gennem året?</h2>
+
+    </div>
+
+    <!-- CIRKEL -->
+
+    <div class="season-circle" id="seasonCircle">
+
+        <!-- IMAGE -->
+
+        <img id="seasonImage"
+             src="image/sommer.webp"
+             alt="Årstid">
+
+        <!-- OVERLAY -->
+
+        <div class="season-overlay"></div>
+
+        <!-- DEFAULT HJUL -->
+
+        <div class="season-grid" id="seasonGrid">
+
+            <button onclick="openSeason('spring')">FORÅR</button>
+
+            <button onclick="openSeason('summer')">SOMMER</button>
+
+            <button onclick="openSeason('autumn')">EFTERÅR</button>
+
+            <button onclick="openSeason('winter')">VINTER</button>
+
         </div>
-    </section>
+
+        <!-- ACTIVE CONTENT -->
+
+        <div class="season-active" id="seasonActive">
+
+            <button class="season-back"
+                    onclick="closeSeason()">
+
+                ← Tilbage
+
+            </button>
+
+            <div class="season-info">
+
+                <h3 id="seasonTitle"></h3>
+
+                <p id="seasonText"></p>
+
+            </div>
+
+            <!-- PILER -->
+
+            <div class="season-nav">
+
+                <button onclick="prevSlide()">←</button>
+
+                <button onclick="nextSlide()">→</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="forside-citat">
+    <div class="forside-citat-box">
+        <h3>
+            Et fællesskab hele året
+        </h3>
+    </div>
+</section>
+
 
 <!--VEJR INFO SECTION-->
-
 <section class="vejr-info">
     <div class="vejr-info-top">
 
@@ -218,106 +292,267 @@
                 det er følelsen af fællesskab hele året.”
             </blockquote>
             <span>Louise, beboer</span>
-
         </div>
-
     </div>
 
     <!-- BUND -->
-
     <div class="vejr-info-bottom">
 
         <!-- VENSTRE -->
-
         <div class="vejr-info-activity">
-
-            <img src="image/foraar.webp" alt="Forår">
-
+            <img src="image/forår.webp" alt="Forår">
             <h3>Aktiviteter året rundt</h3>
-
             <p>
                 Et trygt fristed for hunde i nød, hvor
                 dedikerede frivillige hver dag arbejder for at
                 give dem en ny chance i livet.
             </p>
-
             <p>
                 Perfekt som en del af dit sabbatår, hvor du
                 kan kombinere rejse med frivilligt arbejde og
                 skabe oplevelser, der virkelig betyder noget.
             </p>
-
         </div>
 
         <!-- HØJRE -->
-
         <div class="vejr-events">
-
             <h3>Begivenheder på Sejerø</h3>
 
             <!-- EVENT -->
-
             <div class="vejr-event">
-
-                <img src="image/jul.webp" alt="Jul">
-
+                <img src="image/færgesolnedgang.webp" alt="Jul">
                 <div>
-
                     <h4>Fælles juletræstænding</h4>
-
                     <p>Sejerby, 4592</p>
-
                     <span>4. december 2026</span>
-
                 </div>
-
             </div>
 
             <!-- EVENT -->
-
             <div class="vejr-event">
-
-                <img src="image/" alt="Vinterbadning">
-
+                <img src="image/vinter.webp" alt="Vinterbadning">
                 <div>
-
                     <h4>Vinterbadning</h4>
-
                     <p>Kongstrup, 4592</p>
-
                     <span>17. januar 2026</span>
-
                 </div>
-
             </div>
 
             <!-- EVENT -->
-
             <div class="vejr-event">
-
                 <img src="image/unge%20omkring%20bål.png" alt="Bål">
-
                 <div>
-
                     <h4>Bålhygge og sang</h4>
-
                     <p>Mastrup, 4592</p>
-
                     <span>28 august 2026</span>
-
                 </div>
-
             </div>
-
             <a href="#">Udforsk årstiderne</a>
-
         </div>
-
     </div>
-
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+    const seasonData = {
+
+        summer: [
+
+            {
+
+                title: "Sommer på Sejerø",
+
+                text:
+                    "Lange lyse aftener, strandliv og fællesskab ved havnen.",
+
+                image: "image/sommer.webp"
+
+            },
+
+            {
+
+                title: "Aktiviteter om sommeren",
+
+                text:
+                    "Badning, fællesspisning, markeder og oplevelser i naturen.",
+
+                image: "image/sommer2.webp"
+
+            }
+
+        ],
+
+        spring: [
+
+            {
+
+                title: "Forår på Sejerø",
+
+                text:
+                    "Naturen vågner, og livet flytter udenfor igen.",
+
+                image: "image/foraar.webp"
+
+            },
+
+            {
+
+                title: "Forårsaktiviteter",
+
+                text:
+                    "Cykelture, naturvandringer og fællesskab i det grønne.",
+
+                image: "image/foraar2.webp"
+
+            }
+
+        ],
+
+        autumn: [
+
+            {
+
+                title: "Efterår på Sejerø",
+
+                text:
+                    "Ro, smukke farver og tid til nærvær.",
+
+                image: "image/efteraar.webp"
+
+            },
+
+            {
+
+                title: "Efterårsoplevelser",
+
+                text:
+                    "Bål, vandreture og hyggelige fællesskaber.",
+
+                image: "image/efteraar2.webp"
+
+            }
+
+        ],
+
+        winter: [
+
+            {
+
+                title: "Vinter på Sejerø",
+
+                text:
+                    "Små stærke fællesskaber og masser af ro.",
+
+                image: "image/vinter.webp"
+
+            },
+
+            {
+
+                title: "Vinterliv",
+
+                text:
+                    "Vinterbadning, juletraditioner og nærvær.",
+
+                image: "image/vinter2.webp"
+
+            }
+
+        ]
+
+    };
+
+    let currentSeason = "";
+    let currentSlide = 0;
+
+    /* OPEN */
+
+    function openSeason(season) {
+
+        currentSeason = season;
+
+        currentSlide = 0;
+
+        document.getElementById("seasonGrid")
+            .style.display = "none";
+
+        document.getElementById("seasonActive")
+            .classList.add("active");
+
+        updateSeason();
+
+    }
+
+    /* UPDATE */
+
+    function updateSeason() {
+
+        const data =
+            seasonData[currentSeason][currentSlide];
+
+        document.getElementById("seasonTitle")
+            .innerText = data.title;
+
+        document.getElementById("seasonText")
+            .innerText = data.text;
+
+        document.getElementById("seasonImage")
+            .src = data.image;
+
+    }
+
+    /* CLOSE */
+
+    function closeSeason() {
+
+        document.getElementById("seasonGrid")
+            .style.display = "grid";
+
+        document.getElementById("seasonActive")
+            .classList.remove("active");
+
+    }
+
+    /* NEXT */
+
+    function nextSlide() {
+
+        currentSlide++;
+
+        if (
+            currentSlide >=
+            seasonData[currentSeason].length
+        ) {
+
+            currentSlide = 0;
+
+        }
+
+        updateSeason();
+
+    }
+
+    /* PREV */
+
+    function prevSlide() {
+
+        currentSlide--;
+
+        if (currentSlide < 0) {
+
+            currentSlide =
+                seasonData[currentSeason].length - 1;
+
+        }
+
+        updateSeason();
+
+    }
+
+</script>
+
 </body>
 </html>
 
