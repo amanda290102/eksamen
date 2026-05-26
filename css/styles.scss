@@ -651,6 +651,8 @@ BOTTOM
 }
 
 
+
+
 //mød familierne//
 
 .forside-hero-image{
@@ -743,14 +745,14 @@ BOTTOM
 
 .story-content{
   background: $white-color;
-  height: 80%;
   border-radius: 0 20px 20px 0;
-  padding: 60px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 8px solid $green-color;
 }
 
 
@@ -758,7 +760,7 @@ BOTTOM
 
 .story-content h2{
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 700;
   margin-bottom: 25px;
   color: $blue-color;
@@ -802,3 +804,151 @@ BOTTOM
   font-style: italic;
   font-weight: 600;
 }
+
+
+
+
+.scroll-test{
+  padding: 80px 24px;
+}
+
+
+.scroll-wrapper{
+  overflow-x: auto;
+}
+
+
+.scroll-container{
+  display: flex;
+
+  gap: 32px;
+
+  width: max-content;
+}
+
+
+.scroll-card{
+  width: 280px;
+
+  height: 240px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.scroll-top{
+  flex: 1;
+
+  padding: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.scroll-icon{
+  font-size: 32px;
+
+  margin-bottom: 20px;
+}
+
+
+.scroll-top p{
+  font-size: 20px;
+
+  color: #1F3A52;
+
+  margin: 0;
+}
+
+
+.scroll-bottom{
+  height: 60px;
+
+  background: #A9C0C8;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+.scroll-bottom h4{
+  margin: 0;
+  font-size: 20px;
+  color: #1F3A52;
+}
+
+
+//bottom//
+.mødfamilierne-button-wrapper{
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+
+.mødfamilierne-button{
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 16px 36px;
+
+  background: #A9C0C8;
+
+  color: #1F3A52 !important;
+
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  font-family: 'Fraunces', serif;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.mødfamilierne-button:hover{
+  background: #96b1bb;
+
+  color: #1F3A52;
+
+  transform: translateY(-2px);
+}
+
+
+
+
+
