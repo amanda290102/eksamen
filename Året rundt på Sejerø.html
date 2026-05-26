@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>Året rundt på Sejerø</title>
 
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Udgiver">
@@ -14,21 +14,435 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Fraunces SemiBold -->
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap" rel="stylesheet">
-
     <!-- Instrument Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+<!--navbar -->
+<nav class="navbar navbar-expand-lg py-2 forside-navbar">
+    <div class="container-fluid">
+
+        <div class="forside-navbar-left">
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Årstiderne</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Livet på øen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="forside-navbar-right">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hverdagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Om øen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="forside-floating-logo">
+    <img src="image/logo.svg" alt="Sejerø">
+</div>
+<!--navbar slut-->
+
+<section class="vejr-hero">
+    <video autoplay muted loop playsinline>
+        <source src="image/herovideo4.MP4" type="video/mp4">
+    </video>
+    <div class="vejr-overlay"></div>
+    <div class="vejr-content">
+        <h1>Et liv gennem alle årstider</h1>
+        <p>
+            På Sejerø ændrer naturen sig med årstiderne,
+            men følelsen af nærvær og fællesskab består hele året.
+        </p>
+    </div>
+</section>
+
+<section class="forside-intro">
+    <div class="forside-intro-card">
+        <h3>
+            Et liv gennem alle årstider
+        </h3>
+        <p>
+            På Sejerø  fortsætter hverdagen gennem alle årets sæsoner med skoleliv,
+            fællesskab, natur og nærvær som en naturlig del af øen. Hver årstid
+            bringer nye måder at opleve øen på - fra lyse sommeraftener ved havet
+            til rolige vintermåneder med stærke fællesskaber.
+        </p>
+    </div>
+</section>
+
+<section class="forside-citat">
+    <div class="forside-citat-box">
+        <h3>
+            Hvad har Sejerø at byde på?
+        </h3>
+    </div>
+</section>
+
+<!--VEJR SCROLLBAR-->
+<section class="vejr-scrollbar">
+    <div class="vejr-scrollbar-wrapper">
+        <div class="vejr-scrollbar-container">
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-foraar.svg" alt="Forår">
+                    <p>
+                        Naturen vågner, og vi flytter udenfor igen
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Forår på Sejerø</h4>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-sommer.svg" alt="Sommer">
+                    <p>
+                        Langedage, havet tæt på og mere tid sammen
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Sommer på Sejerø</h4>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-efteraar.svg" alt="Efterår">
+                    <p>
+                        Naturen skifter farver, og tempoet sænkes
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Efterår på Sejerø</h4>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-vinter.svg" alt="Vinter">
+                    <p>
+                        Nærvær, fællesskab og ro
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Vinter på Sejerø</h4>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-faellesskab.svg" alt="Fællesskab">
+                    <p>
+                        Små fællesskaber og nærvær
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Et fællesskab hele året</h4>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="vejr-scrollbar-card">
+                <div class="vejr-scrollbar-top">
+                    <img src="image/ikon-ro.svg" alt="Ro">
+                    <p>
+                        Mere ro, mindre stress og plads til familieliv
+                    </p>
+                </div>
+                <div class="vejr-scrollbar-bottom">
+                    <h4>Et roligere tempo</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--ÅRSHJUL-->
+<section class="season-section">
+    <div class="season-header">
+        <h2>Hvordan ser livet ud gennem året?</h2>
+    </div>
+
+    <!-- CIRKEL -->
+    <div class="season-circle" id="seasonCircle">
+
+        <!-- IMAGE -->
+        <img id="seasonImage"
+             src="image/sommer.webp"
+             alt="Årstid">
+
+        <!-- OVERLAY -->
+        <div class="season-overlay"></div>
+
+        <!-- DEFAULT HJUL -->
+        <div class="season-grid" id="seasonGrid">
+            <button onclick="openSeason('spring')">FORÅR</button>
+            <button onclick="openSeason('summer')">SOMMER</button>
+            <button onclick="openSeason('autumn')">EFTERÅR</button>
+            <button onclick="openSeason('winter')">VINTER</button>
+        </div>
+
+        <!-- ACTIVE CONTENT -->
+        <div class="season-active" id="seasonActive">
+            <button class="season-back"
+                    onclick="closeSeason()">
+                ← Tilbage
+            </button>
+            <div class="season-info">
+                <h3 id="seasonTitle"></h3>
+                <p id="seasonText"></p>
+            </div>
+
+            <!-- PILER -->
+            <div class="season-nav">
+                <button onclick="prevSlide()">←</button>
+                <button onclick="nextSlide()">→</button>
+            </div>
+        </div>
+    </div>
+</section>
 
 
+<section class="forside-citat">
+    <div class="forside-citat-box">
+        <h3>
+            Et fællesskab hele året
+        </h3>
+    </div>
+</section>
+
+
+<!--VEJR INFO SECTION-->
+<section class="vejr-info">
+    <div class="vejr-info-top">
+
+        <!-- VENSTRE BILLEDE -->
+        <div class="vejr-info-image">
+            <img src="image/familie%20på%20mark.avif" alt="Familie">
+        </div>
+
+        <!-- HØJRE TEKST -->
+        <div class="vejr-info-content">
+            <h3>“Et fællesskab hele året”</h3>
+            <p>
+                Sejerø er ikke kun en sommerdestination.
+                Livet fortsætter gennem alle årets sæsoner
+                med hverdagsliv, fællesskab og nærvær
+                som en naturlig del af øen.
+            </p>
+            <img src="image/ikon-sommer.svg" alt="Ikon">
+
+            <blockquote>
+                “Det bedste ved Sejerø er ikke sommeren -
+                det er følelsen af fællesskab hele året.”
+            </blockquote>
+            <span>Louise, beboer</span>
+        </div>
+    </div>
+
+    <!-- BUND -->
+    <div class="vejr-info-bottom">
+
+        <!-- VENSTRE -->
+        <div class="vejr-info-activity">
+            <img src="image/forår.webp" alt="Forår">
+            <h3>Aktiviteter året rundt</h3>
+            <p>
+                Et trygt fristed for hunde i nød, hvor
+                dedikerede frivillige hver dag arbejder for at
+                give dem en ny chance i livet.
+            </p>
+            <p>
+                Perfekt som en del af dit sabbatår, hvor du
+                kan kombinere rejse med frivilligt arbejde og
+                skabe oplevelser, der virkelig betyder noget.
+            </p>
+        </div>
+
+        <!-- HØJRE -->
+        <div class="vejr-events">
+            <h3>Begivenheder på Sejerø</h3>
+
+            <!-- EVENT -->
+            <div class="vejr-event">
+                <img src="image/færgesolnedgang.webp" alt="Jul">
+                <div>
+                    <h4>Fælles juletræstænding</h4>
+                    <p>Sejerby, 4592</p>
+                    <span>4. december 2026</span>
+                </div>
+            </div>
+
+            <!-- EVENT -->
+            <div class="vejr-event">
+                <img src="image/vinter.webp" alt="Vinterbadning">
+                <div>
+                    <h4>Vinterbadning</h4>
+                    <p>Kongstrup, 4592</p>
+                    <span>17. januar 2026</span>
+                </div>
+            </div>
+
+            <!-- EVENT -->
+            <div class="vejr-event">
+                <img src="image/unge%20omkring%20bål.png" alt="Bål">
+                <div>
+                    <h4>Bålhygge og sang</h4>
+                    <p>Mastrup, 4592</p>
+                    <span>28 august 2026</span>
+                </div>
+            </div>
+            <a href="#">Udforsk årstiderne</a>
+        </div>
+    </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const seasonData = {
+        summer: [
+            {
+                title: "Sommer på Sejerø",
+                text:
+                    "Lange lyse aftener, strandliv og fællesskab ved havnen.",
+                image: "image/sommer.webp"
+            },
+
+            {
+                title: "Aktiviteter om sommeren",
+                text:
+                    "Badning, fællesspisning, markeder og oplevelser i naturen.",
+                image: "image/sommer2.webp"
+            }
+        ],
+        spring: [
+            {
+                title: "Forår på Sejerø",
+                text:
+                    "Naturen vågner, og livet flytter udenfor igen.",
+                image: "image/foraar.webp"
+            },
+            {
+                title: "Forårsaktiviteter",
+                text:
+                    "Cykelture, naturvandringer og fællesskab i det grønne.",
+                image: "image/foraar2.webp"
+            }
+        ],
+        autumn: [
+            {
+                title: "Efterår på Sejerø",
+                text:
+                    "Ro, smukke farver og tid til nærvær.",
+                image: "image/efteraar.webp"
+            },
+            {
+                title: "Efterårsoplevelser",
+                text:
+                    "Bål, vandreture og hyggelige fællesskaber.",
+                image: "image/efteraar2.webp"
+            }
+        ],
+        winter: [
+            {
+                title: "Vinter på Sejerø",
+                text:
+                    "Små stærke fællesskaber og masser af ro.",
+                image: "image/vinter.webp"
+            },
+            {
+                title: "Vinterliv",
+                text:
+                    "Vinterbadning, juletraditioner og nærvær.",
+                image: "image/vinter2.webp"
+            }
+        ]
+    };
+    let currentSeason = "";
+    let currentSlide = 0;
+
+    /* OPEN */
+    function openSeason(season) {
+        currentSeason = season;
+        currentSlide = 0;
+        document.getElementById("seasonGrid")
+            .style.display = "none";
+        document.getElementById("seasonActive")
+            .classList.add("active");
+        updateSeason();
+    }
+
+    /* UPDATE */
+    function updateSeason() {
+        const data =
+            seasonData[currentSeason][currentSlide];
+        document.getElementById("seasonTitle")
+            .innerText = data.title;
+        document.getElementById("seasonText")
+            .innerText = data.text;
+        document.getElementById("seasonImage")
+            .src = data.image;
+    }
+
+    /* CLOSE */
+    function closeSeason() {
+        document.getElementById("seasonGrid")
+            .style.display = "grid";
+        document.getElementById("seasonActive")
+            .classList.remove("active");
+    }
+
+    /* NEXT */
+    function nextSlide() {
+        currentSlide++;
+        if (
+            currentSlide >=
+            seasonData[currentSeason].length
+        ) {
+            currentSlide = 0;
+        }
+        updateSeason();
+    }
+
+    /* PREV */
+    function prevSlide() {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide =
+                seasonData[currentSeason].length - 1;
+        }
+        updateSeason();
+    }
+</script>
+
 </body>
 </html>
 
